@@ -1,7 +1,7 @@
 import axios from "axios"
 
 // This file sends api request for task resource
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URLya
+const API_BASE_URL = import.meta.env.prod ? "https://not-to-do-list-fullstack.onrender.com" : import.meta.env.VITE_API_BASE_URL
 const TASK_ENPOINT = '/api/tasks'
 
 // FRONTEND CRUD OPERATIONS

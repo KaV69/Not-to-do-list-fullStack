@@ -21,7 +21,7 @@ app.use(cors(corsOption))
 connectToMongoDb()
 
 //SSR-Serve frontend  using our nodejs server
-app.use('/', express.static(path.join(__dirname, 'frontendBuild')))
+app.use('/', express.static(path.join(__dirname, 'dist')))
 // Task Routes | Controller
 app.use('/api/tasks', taskRouter)
 
